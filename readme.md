@@ -1,5 +1,5 @@
-## Repo to quick start a static website
-####with Grunt, Pug, Sass, and a Json file for data
+## STFU website
+####you can work on it with Grunt, Pug, Sass, and a Json file for data
 
 You will need to **install Node for npm and Ruby for Sass**.
 
