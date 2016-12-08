@@ -6,6 +6,9 @@ html, body {
   font-size: 15px;
   color: #333; }
 
+body * {
+  box-sizing: border-box; }
+
 /*
 When setting the primary font stack, apply it to the Pure grid units along
 with `html`, `button`, `input`, `select`, and `textarea`. Pure Grids use
@@ -14,7 +17,7 @@ specific font stacks to ensure the greatest OS/browser compatibility.
 html, button, input, select, textarea,
 .pure-g [class*="pure-u"] {
   /* Set your content font stack here: */
-  font-family: 'Lato', Helvetica, 'Times New Roman', serif; }
+  font-family: 'lato', Helvetica, 'Times New Roman', serif; }
 
 .display-flex {
   display: -webkit-box;
@@ -36,47 +39,90 @@ html, button, input, select, textarea,
   -webkit-align-items: center;
   align-items: center; }
 
-nav {
-  height: 100px;
-  line-height: 50px;
-  padding: 0 2rem;
-  background-color: white;
-  color: #FF4D41; }
-
 .btn {
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 1.8rem;
   background-color: white;
   color: #FF4D41;
   border: 2px solid;
   text-transform: uppercase;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   letter-spacing: 0.1rem;
-  border-radius: 4px; }
+  border-radius: 7px; }
 
-.home-header {
-  background-color: white; }
-  .home-header .header-text {
+header {
+  background-color: black; }
+  header .header-text {
     display: inline-block;
     vertical-align: bottom;
-    padding: 2rem 1rem 4rem 4rem;
+    padding: 1rem 1rem 1rem 4rem;
     width: 70%; }
-    .home-header .header-text .header-title {
-      color: #FF4D41;
+    header .header-text .header-title {
+      color: yellow;
       font-size: 2.5rem;
       padding-bottom: 1rem;
-      font-weight: 900; }
-    .home-header .header-text .header-description {
-      font-size: 1.8rem; }
-  .home-header .header-btn-cont {
+      font-weight: 100;
+      font-size: 4rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin: 0;
+      padding: 1rem 0;
+      font-family: "Oswald", Helvetica; }
+    header .header-text .header-description {
+      font-size: 1.8rem;
+      font-weight: 300;
+      margin: 0;
+      padding-bottom: 1rem;
+      color: white; }
+  header .header-btn-cont {
     display: inline-block;
     vertical-align: bottom;
     text-align: center;
     margin: 0 auto;
     padding: 3rem 1rem 5rem; }
+    header .header-btn-cont .btn {
+      background-color: transparent;
+      color: yellow; }
+
+nav {
+  line-height: 50px;
+  padding: 0 2rem;
+  background-color: yellow;
+  color: black; }
+  nav ul {
+    text-align: center;
+    margin: 0; }
+    nav ul li {
+      display: inline-block; }
+      nav ul li a {
+        display: block;
+        padding: 0 1.5rem;
+        border-bottom: 3px solid transparent;
+        transition: 0.1s;
+        cursor: pointer;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.1rem;
+        color: black; }
+        nav ul li a:active {
+          border-color: black; }
+        nav ul li a:hover {
+          border-color: black; }
 
 .home-screen {
   width: 100%;
-  background-color: aliceblue; }
+  background-color: white; }
+  .home-screen .screen-title {
+    color: #FF4D41;
+    font-weight: 900;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    text-align: center; }
+  .home-screen .screen-description {
+    font-size: 1.5rem;
+    width: 80%;
+    padding-bottom: 2rem;
+    margin: 0 auto; }
   .home-screen .screen-content {
     min-height: 100vh;
     flex-direction: column; }
@@ -93,7 +139,7 @@ nav {
       margin: 0 auto;
       font-size: 1.6rem;
       font-weight: 600;
-      line-height: 1.6em; }
+      line-height: 1.4em; }
     .home-screen .screen-content .value-img-container {
       width: 70%;
       margin: 0 auto; }
@@ -112,12 +158,18 @@ nav {
       padding-bottom: 2rem; }
 
 #home-screen-1 {
-  background-color: #FF4D41; }
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(http://gangsterreport.com/wp-content/uploads/2014/07/purple-gang.jpg); }
   #home-screen-1 .screen-content {
-    height: 100vh; }
+    min-height: 0;
+    height: 50vh; }
+    #home-screen-1 .screen-content .description-text {
+      text-align: center; }
 
 #home-screen-2 {
-  background-color: #F2931F; }
+  background-color: #F2931F;
+  background: url("../assets/wrench-pattern.png"), -webkit-linear-gradient(#F2931F, #F2931F);
+  background: url("../assets/wrench-pattern.png"), linear-gradient(#F2931F, #F2931F);
+  background-size: 40%; }
 
 #home-screen-3 {
   background-color: #E5CA21; }
@@ -135,5 +187,109 @@ nav {
   background-color: #91B221; }
   #home-screen-4 .value-img-container {
     width: 50%; }
+
+#home-screen-5 .pure-u-1:first-child .screen-content {
+  background-color: #F2931F;
+  position: relative;
+  z-index: 1; }
+#home-screen-5 .pure-u-1:nth-child(2) .screen-content {
+  background-color: #FF4D41; }
+#home-screen-5 .pb-title {
+  text-align: center;
+  color: white;
+  font-weight: 900;
+  font-size: 2rem;
+  padding: 2rem 0; }
+#home-screen-5 .pb-description {
+  font-size: 1.5rem;
+  width: 80%;
+  padding-bottom: 2rem;
+  margin: 0 auto; }
+#home-screen-5 .solution-box {
+  width: 70vw;
+  margin-left: 15vw;
+  background: white;
+  position: relative;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 4rem; }
+  #home-screen-5 .solution-box:before {
+    content: '';
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    right: -7px;
+    top: -7px;
+    background-color: #E5CA21;
+    z-index: -1; }
+  #home-screen-5 .solution-box:after {
+    content: '';
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    left: -7px;
+    bottom: -7px;
+    background-color: #91B221;
+    z-index: -1; }
+
+#home-screen-6 {
+  text-align: center; }
+  #home-screen-6 .screen-content {
+    min-height: 50vh; }
+
+.project-box {
+  width: 100%;
+  font-size: 0;
+  background-color: #FF4D41;
+  height: 25vw; }
+  .project-box .project-img-container {
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    border: 5px solid transparent;
+    box-sizing: border-box; }
+    .project-box .project-img-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      background-color: white; }
+  .project-box .project-text-container {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    width: 50%;
+    font-size: 1rem;
+    color: white;
+    padding: 1rem; }
+    .project-box .project-text-container .project-title {
+      font-size: 1.8rem;
+      padding-bottom: 1rem; }
+    .project-box .project-text-container .project-description {
+      padding-left: 0.25rem;
+      font-size: 1.2rem; }
+
+#home-screen-7 {
+  background-color: #FF4D41; }
+  #home-screen-7 .pure-u-1:nth-child(4n) .project-box {
+    background-color: #FF4D41; }
+  #home-screen-7 .pure-u-1:nth-child(4n+1) .project-box {
+    background-color: #F2931F; }
+  #home-screen-7 .pure-u-1:nth-child(4n+2) .project-box {
+    background-color: #E5CA21; }
+  #home-screen-7 .pure-u-1:nth-child(4n+3) .project-box {
+    background-color: #91B221; }
+  #home-screen-7 .screen-title {
+    color: white;
+    padding-top: 2rem; }
+
+#home-contact {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 1.5rem;
+  background-color: white; }
+  #home-contact span {
+    padding-right: 2rem; }
 
 /*# sourceMappingURL=style.css.map */

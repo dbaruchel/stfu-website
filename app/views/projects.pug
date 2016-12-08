@@ -1,0 +1,32 @@
+//- mixin skillsBlock(title, loopItems)
+//-   .block.small-12.large-12.columns
+//-     p= title
+//-     ul
+//-       each skill in loopItems
+//-         li  #{skill}        
+//- +skillsBlock("Preferred Skills", job.pskills)
+
+
+
+
+.screen-title Missions réalisées
+.pure-g
+  each mission in missions
+    .pure-u-1.pure-u-md-1-2
+      .project-box
+        .project-img-container
+          img(src=mission.image_url)
+        .project-text-container
+          .project-title #{mission.title}   
+          .project-description #{mission.description}
+
+.screen-title Nos Projets
+.pure-g
+  each project in projects
+    .pure-u-1.pure-u-md-1-2
+      .project-box
+        .project-img-container
+          img(src=project.image_url)
+        .project-text-container
+          .project-title #{project.title}   
+          .project-description #{project.description}

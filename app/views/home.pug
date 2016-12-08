@@ -1,0 +1,105 @@
+extends layout.pug
+block content
+  section#home-screen-1.home-screen
+    .pure-g
+      .pure-u-1
+        .description-text
+          |Nous ne sommes pas une agence de freelances.
+          br
+          br
+          |Nous ne codons pas d’apps inutiles:
+          br
+          |on l’a trop fait !
+          br
+          br
+          |Nous voulons challenger votre succès sans détours.
+  section#home-screen-2.home-screen
+    .pure-g
+      .pure-u-1.pure-u-md-1-2
+        .screen-content.display-flex.justify-center
+          .value-img-container
+            img(src="assets/rocket.png")
+      .pure-u-1.pure-u-md-1-2
+        .screen-content.display-flex.justify-center
+          .value-title Makers &amp; Entrepreneurs
+          .value-description
+            |Avec nos startups, nous connaissons le challenge de faire marcher l’ensemble d’un projet.
+            br
+            br
+            |Cette expérience, ainsi que nos compétences en Code, Design, UX, Marketing, Machine Learning, …, sont  à votre disposition.
+  section#home-screen-3.home-screen
+    .pure-g
+      .pure-u-1.pure-u-md-1-2
+        .screen-content.display-flex.justify-center
+          .value-title Get Shit Done Processes
+          .value-description
+            |À partir de vos interviews clients, nous suivons les méthodes UX inventées par les meilleurs.
+            br
+            br
+            |Nous en tirons une expérience utilisateur complète, de la découverte à la rétention, adaptée à vos ressources et vos besoins.
+      .pure-u-1.pure-u-md-1-2
+        .screen-content.display-flex.justify-center
+          .value-img-container
+            img(src="assets/get-shit-done.png")
+  section#home-screen-4.home-screen
+    .pure-g
+      .pure-u-1.pure-u-md-1-2
+        .screen-content.display-flex.justify-center
+          .value-img-container
+            img(src="assets/insta-legos.png")
+      .pure-u-1.pure-u-md-1-2
+        .screen-content.display-flex.justify-center
+          .value-title Ship Less, it's More
+          .value-description
+            |Notre solution fournira la valeur principale pour vos utilisateurs.
+            br
+            |Qui sait ! Excel, Wordpress et Mailchimp suffiront peut-être…
+            br
+            br
+            |Nous vous aiderons à le réaliser ou à trouver quelqu’un pour réaliser.
+  section#home-screen-5.home-screen
+    .pure-g
+      .pure-u-1.pure-u-md-1-2
+        .screen-content
+          .pb-title Entrepreneur ?
+          .pb-description 
+            |Peu de ressources ?
+            br
+            |Pas les compétences pour tout faire tout seul ?
+            br
+            |On connaît :)
+            br
+            |Pas besoin d’un CTO, d’un designer, et d’une armée de codeurs pour avancer…
+          .solution-box
+            |Nous vous aidons à formaliser votre idée et à la réaliser pour que vous la testiez rapidement.
+
+
+      .pure-u-1.pure-u-md-1-2
+        .screen-content
+          .pb-title Intrapreneur ?
+          .pb-description
+            |Une idée ? 
+            br
+            |Votre entreprise ne débloquera pas de gros budget sans preuve de concept ?
+            br
+            |Pourquoi payer pour des fonctionnalités complexes et chères, sans s’assurer qu’elles sont utiles ?
+
+  section#home-screen-6.home-screen
+    .pure-g
+      .pure-u-1
+        .screen-content.display-flex.justify-center
+          .screen-title Nos offres
+          .screen-description
+            |Ateliers, Hackathons, Développement, … nous adaptons notre méthode à votre besoin pour que vous en tiriez la plus grand valeur !
+            br
+            br
+            |Parlez-nous de votre projet:
+          .btn-container
+            button.btn Je me lance
+
+  section#home-screen-7.home-screen
+    include projects.pug
+
+  section#home-contact
+    span Des questions ?
+    button.btn Contactez-nous !

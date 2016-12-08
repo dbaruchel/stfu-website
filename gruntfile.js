@@ -6,11 +6,13 @@ module.exports = function(grunt) {
         options: {
           pretty: true,
           data: {
-            jobs: grunt.file.readJSON('data.json')
+            projects: grunt.file.readJSON('projects.json'),
+            missions: grunt.file.readJSON('missions.json'),
           }
         },
         files: {
-          'build/index.html': 'app/views/jobs.pug'
+          'build/index.html': 'app/views/home.pug',
+          'build/offre.html': 'app/views/offer.pug',
         }
       }
     },
