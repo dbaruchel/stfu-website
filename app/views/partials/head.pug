@@ -1,3 +1,13 @@
+mixin scriptsHeaders(sources)
+  <!--[if lte IE 9]>
+  each source in sources
+    script(src=source)
+  <![endif]-->
+  <!--[if gt IE 9 | !IE ]><!-->
+  each source in sources
+    script(src=source defer)
+  <!--<![endif]-->
+
 head
   meta(charset="UTF-8")
   meta(content="text/html; charset=utf-8" http-equiv="Content-Type")
@@ -41,3 +51,7 @@ head
 
   //- STYLESHEETS
   link(rel = "stylesheet" href = "style/style.css")
+
+  //- SCRIPTS
+  - var jsSources = ['js/jquery.min.js', 'js/app.js']
+  +scriptsHeaders(jsSources)

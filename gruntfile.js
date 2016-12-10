@@ -13,6 +13,8 @@ module.exports = function(grunt) {
         files: {
           'build/index.html': 'app/views/home.pug',
           'build/offre.html': 'app/views/offer.pug',
+          'build/projets.html': 'app/views/projects.pug',
+          'build/equipe.html': 'app/views/team.pug',
         }
       }
     },

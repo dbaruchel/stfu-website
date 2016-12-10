@@ -7,9 +7,10 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: #f0f0f0;
+  // background-color: #f0f0f0;
+  background-color: black;
   font-size: 15px;
-  color:#333;
+  color:white;
 }
 
 body * {
@@ -47,22 +48,28 @@ html, button, input, select, textarea,
 
 .btn {
   padding: 0.8rem 1.8rem;
-  background-color: white;
-  color: #FF4D41;
-  border: 2px solid;
+  border: 3px solid;
   text-transform: uppercase;
   font-size: 1.1rem;
   letter-spacing: 0.1rem;
   border-radius: 7px;
+  background-color:transparent;
+  color: yellow;
+  font-weight: 600;
+  transition: 0.2s;
+  cursor: pointer;
+  &:hover {
+    background-color:yellow;
+    color:black;
+  }
 }
 
 header {
   background-color:black;
   .header-text {
-    display: inline-block;
-    vertical-align: bottom;
-    padding:1rem 1rem 1rem 4rem;
-    width: 70%;
+    padding: 3rem;
+    width: 100%;
+    text-align: center;
     .header-title {
       color: yellow;
       font-size: 2.5rem;
@@ -74,6 +81,11 @@ header {
       margin: 0;
       padding: 1rem 0;
       font-family: "Oswald", Helvetica;
+      i {
+        font-size: 0.5em;
+        position: relative;
+        top: -1em;
+      }
     }
     .header-description {
       font-size: 1.8rem;
@@ -83,27 +95,18 @@ header {
       color:white;
     }
   }
-  .header-btn-cont {
-    display: inline-block;
-    vertical-align: bottom;
-    text-align: center;
-    margin:0 auto;
-    padding: 3rem 1rem 5rem;
-    .btn {
-      background-color:transparent;
-      color: yellow;
-    }
-  }
 }
 
 nav {
   line-height: 50px;
-  padding:0 2rem;
+  padding:0;
   background-color:yellow;
   color:black;
+  position:relative;
   ul {
-    text-align:center;
     margin:0;
+    padding:0;
+    text-align:center;
     li {
       display: inline-block;
       a {
@@ -126,111 +129,128 @@ nav {
       }
     }
   }
+  .contact {
+    position:absolute;
+    right:0;
+    top:0;
+    display: block;
+    padding: 0 1.5rem;
+    border-bottom:3px solid transparent;
+    transition: 0.1s;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.1rem;
+    &:hover {
+      border-color:black;
+    }
+  }
+  &.sticky-nav {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+  }
+}
 
-
+.screen-title {
+  color: black;
+  font-family: "Oswald", Helvetica;
+  background-color: yellow;
+  font-weight: 900;
+  font-size: 2.5rem;
+  padding: 1rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin:0;
 }
 
 
 .home-screen {
   width: 100%;
-  background-color:white;
-  .screen-title {
-    color:$color1;
-    font-weight: 900;
-    font-size: 2rem;
-    padding-bottom:2rem;
-    text-align:center;
-  }
+
   .screen-description {
     font-size: 1.5rem;
-    width: 80%;
+    width: 60%;
     padding-bottom:2rem;
     margin: 0 auto;
-  }
-  .screen-content {
-    min-height: 100vh;
-    flex-direction: column;
-    .description-img-container {
-      width: 100%;
-      height: 100%;
-      img {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-      }
-    }
-    .description-text {
-      color:white;
-      width: 80%;
-      margin:0 auto;
-      font-size: 1.6rem;
-      font-weight: 600;
-      line-height: 1.4em;
-    }
-    .value-img-container {
-      width: 70%;
-      margin: 0 auto;
-      img {
-        width:100%;
-      }
-    }
-    .value-title {
-      color:white;
-      font-weight: 900;
-      font-size: 2rem;
-      padding-bottom:2rem;
-      position: relative;
-      left:-10%;
-    }
-    .value-description {
-      font-size: 1.5rem;
-      width: 80%;
-      padding-bottom:2rem;
-    }
   }
 }
 
 #home-screen-1 {
-  background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(http://gangsterreport.com/wp-content/uploads/2014/07/purple-gang.jpg);
-  .screen-content {
-    min-height: 0;
-    height: 50vh;
-    .description-text {
-      text-align: center;
+  background:-webkit-linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('../assets/purple-gang.jpg');
+  background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('../assets/purple-gang.jpg');
+  background-position:center;
+  background-size:cover;
+  padding:2rem 0;
+  .description-text {
+    text-align:center;
+    color:white;
+    width: 60%;
+    margin:0 auto;
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 1.5em;
+    .motto {
+      padding: 1rem 2rem;
+      margin: 2rem 0;
+      font-size: 2rem;
+      text-transform: uppercase;
+      color: yellow;
+      display: inline-block;
+      background-color: black;
+    }
+  }
+  .btn-cont {
+    text-align: center;
+    padding: 2.5rem 0 2rem;
+    margin:0 auto;
+    .btn {
+      font-size: 1.4rem;
     }
   }
 }
 
 #home-screen-2 {
-  background-color:$color2;
-  background:url('../assets/wrench-pattern.png'), -webkit-linear-gradient($color2, $color2);
-  background:url('../assets/wrench-pattern.png'), linear-gradient($color2, $color2);
-  background-size: 40%;
+  .screen-content {
+    height: 400px;
+    flex-direction: column;
+
+    .value-img-container {
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      img {
+        width:100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &.screen-text {
+      padding:0 2rem;
+      .value-title {
+        color:yellow;
+        font-weight: 900;
+        font-size: 2rem;
+        padding-bottom:2rem;
+        position: relative;
+      }
+      .value-description {
+        color:white;
+        font-size: 1.5rem;
+        width: 80%;
+        padding-bottom:2rem;
+        padding-left: 1rem;
+      }
+    }
+  }
 }
 
-#home-screen-3 {
-  background-color:$color3;
 
-  .value-title {
-    text-align: right;
-    position: relative;
-    right: -6%;
-    width: 80%;
-    margin-left: 20%;
-    left: initial;
-  }
-
-  .value-description {
-    margin-left:20%;
-  }
-}
-
-#home-screen-4 {
-  background-color:$color4;
-  .value-img-container {
-    width: 50%;
-  }
-}
 
 #home-screen-5 {
 
@@ -291,24 +311,20 @@ nav {
 
 #home-screen-6 {
   text-align: center;
-  .screen-content {
-    min-height: 50vh;
+  padding-bottom: 4rem;
+  .screen-description {
+    padding: 3rem 0 2rem;
   }
 }
 
-.project-box {
-  width: 100%;
-  font-size:0;
-  background-color:$color1;
-  height: 25vw;
-
-  .project-img-container {
-    width: 50%;
-    height: 100%;
-    display: inline-block;
-    vertical-align: top;
-    border:5px solid transparent;
-    box-sizing: border-box;
+.home-project-container {
+  position:relative;
+  margin: 1rem;
+  .home-project-img-cont {
+    height: 33vw;
+    margin:0 auto;
+    -webkit-filter:grayscale(1);
+    filter:grayscale(1);
     img {
       width: 100%;
       height: 100%;
@@ -316,53 +332,105 @@ nav {
       background-color: white;
     }
   }
+  .home-project-text {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    min-height: 50%;
+    text-align: left;
+    background: rgba(0,0,0,0.5);
+    padding: 2rem 1rem;
+    .home-project-title {
+      font-size: 1.8rem;
+      letter-spacing: 0.1rem;
+      padding-bottom: 0.5rem;
+      color: yellow;
+      text-transform: uppercase;
+      font-family: "Oswald", Helvetica;
+    }
+    .home-project-description {
+      font-size: 1.3rem;
+    }
+  }
+}
 
+.project-box {
+  width: 50%;
+  margin:0 auto;
+  padding:1rem 0 2rem;
+  border-bottom:1px solid yellow;
+  color: #333;
+  .project-img-container {
+    width: 300px;
+    height: 300px;
+    margin:0 auto;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      background-color: white;
+    }
+  }
   .project-text-container {
-    display: inline-block;
-    vertical-align: top;
-    box-sizing: border-box;
-    width: 50%;
+    text-align:center;
     font-size: 1rem;
-    color:white;
-    padding:1rem;
+    padding: 2rem 0 0;
     .project-title {
       font-size: 1.8rem;
       padding-bottom:1rem;
+      color:yellow;
     }
     .project-description {
-      padding-left:0.25rem;
       font-size: 1.2rem;
     }
-
   }
 }
 
-#home-screen-7 {
-  background-color: $color1;
-  .pure-u-1:nth-child(4n) .project-box {
-    background-color:$color1;
-  }
-  .pure-u-1:nth-child(4n+1) .project-box {
-    background-color:$color2;
-  }
-  .pure-u-1:nth-child(4n+2) .project-box {
-    background-color:$color3;
-  }
-  .pure-u-1:nth-child(4n+3) .project-box {
-    background-color:$color4;
-  }
-  .screen-title {
-    color:white;
-    padding-top:2rem;
-  }
-}
+// #project-page {
+//   .pure-u-1:nth-child(2n) .project-box {
+//     background-color:yellow;
+//   }
+//   .pure-u-1:nth-child(2n+1) .project-box {
+//     background-color:black;
+//   }
+//   .screen-title {
+//   }
+// }
 
-#home-contact {
+#home-partners {
   text-align:center;
-  padding:2rem 1rem;
-  font-size: 1.5rem;
-  background-color:white;
-  span {
-    padding-right:2rem;
+  h2.home-subtitle {
+    margin:0;
+    color:yellow;
+    font-weight: 900;
+    font-size: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+    position: relative;
+  }
+  .home-partner-logo-cont {
+    width: 270px;
+    padding:2rem;
+    display: inline-block;
+    vertical-align: middle;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+footer {
+  background-color:yellow;
+  color:black;
+  padding:2rem;
+  p {
+    margin:0;
+    padding-bottom:1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  a {
+    color:black;
   }
 }

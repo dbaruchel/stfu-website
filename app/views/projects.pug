@@ -7,26 +7,28 @@
 //- +skillsBlock("Preferred Skills", job.pskills)
 
 
+extends layout.pug
+block content
 
+  #project-page
+    h1.screen-title Missions réalisées
+    .pure-g
+      each mission in missions
+        .pure-u-1
+          .project-box
+            .project-img-container
+              img(src=mission.image_url)
+            .project-text-container
+              .project-title #{mission.title}   
+              .project-description #{mission.description}
 
-.screen-title Missions réalisées
-.pure-g
-  each mission in missions
-    .pure-u-1.pure-u-md-1-2
-      .project-box
-        .project-img-container
-          img(src=mission.image_url)
-        .project-text-container
-          .project-title #{mission.title}   
-          .project-description #{mission.description}
-
-.screen-title Nos Projets
-.pure-g
-  each project in projects
-    .pure-u-1.pure-u-md-1-2
-      .project-box
-        .project-img-container
-          img(src=project.image_url)
-        .project-text-container
-          .project-title #{project.title}   
-          .project-description #{project.description}
+    h1.screen-title Nos Projets
+    .pure-g
+      each project in projects
+        .pure-u-1
+          .project-box
+            .project-img-container
+              img(src=project.image_url)
+            .project-text-container
+              .project-title #{project.title}   
+              .project-description #{project.description}
