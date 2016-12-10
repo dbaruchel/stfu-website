@@ -1,0 +1,350 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: black;
+  font-size: 15px;
+  color: white; }
+
+body * {
+  box-sizing: border-box; }
+
+/*
+When setting the primary font stack, apply it to the Pure grid units along
+with `html`, `button`, `input`, `select`, and `textarea`. Pure Grids use
+specific font stacks to ensure the greatest OS/browser compatibility.
+*/
+html, button, input, select, textarea,
+.pure-g [class*="pure-u"] {
+  /* Set your content font stack here: */
+  font-family: 'lato', Helvetica, 'Times New Roman', serif; }
+
+.display-flex {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  /* NEW, Spec - Firefox, Chrome, Opera */ }
+
+.justify-center {
+  -webkit-justify-content: center;
+  justify-content: center; }
+
+.align-center {
+  -webkit-align-items: center;
+  align-items: center; }
+
+.btn {
+  padding: 0.8rem 1.8rem;
+  border: 3px solid;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+  border-radius: 7px;
+  background-color: transparent;
+  color: yellow;
+  font-weight: 600;
+  transition: 0.2s;
+  cursor: pointer; }
+  .btn:hover {
+    background-color: yellow;
+    color: black; }
+
+header {
+  background-color: black; }
+  header .header-text {
+    padding: 3rem;
+    width: 100%;
+    text-align: center; }
+    header .header-text .header-title {
+      color: yellow;
+      font-size: 2.5rem;
+      padding-bottom: 1rem;
+      font-weight: 100;
+      font-size: 4rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin: 0;
+      padding: 1rem 0;
+      font-family: "Oswald", Helvetica; }
+      header .header-text .header-title i {
+        font-size: 0.5em;
+        position: relative;
+        top: -1em; }
+    header .header-text .header-description {
+      font-size: 1.8rem;
+      font-weight: 300;
+      margin: 0;
+      padding-bottom: 1rem;
+      color: white; }
+
+nav {
+  line-height: 50px;
+  padding: 0;
+  background-color: yellow;
+  color: black;
+  position: relative; }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    text-align: center; }
+    nav ul li {
+      display: inline-block; }
+      nav ul li a {
+        display: block;
+        padding: 0 1.5rem;
+        border-bottom: 3px solid transparent;
+        transition: 0.1s;
+        cursor: pointer;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.1rem;
+        color: black; }
+        nav ul li a:active {
+          border-color: black; }
+        nav ul li a:hover {
+          border-color: black; }
+  nav .contact {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    padding: 0 1.5rem;
+    border-bottom: 3px solid transparent;
+    transition: 0.1s;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.1rem; }
+    nav .contact:hover {
+      border-color: black; }
+  nav.sticky-nav {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0; }
+
+.screen-title {
+  color: black;
+  font-family: "Oswald", Helvetica;
+  background-color: yellow;
+  font-weight: 900;
+  font-size: 2.5rem;
+  padding: 1rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0; }
+
+.home-screen {
+  width: 100%; }
+  .home-screen .screen-description {
+    font-size: 1.5rem;
+    width: 60%;
+    padding-bottom: 2rem;
+    margin: 0 auto; }
+
+#home-screen-1 {
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/purple-gang.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/purple-gang.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 2rem 0; }
+  #home-screen-1 .description-text {
+    text-align: center;
+    color: white;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 1.5em; }
+    #home-screen-1 .description-text .motto {
+      padding: 1rem 2rem;
+      margin: 2rem 0;
+      font-size: 2rem;
+      text-transform: uppercase;
+      color: yellow;
+      display: inline-block;
+      background-color: black; }
+  #home-screen-1 .btn-cont {
+    text-align: center;
+    padding: 2.5rem 0 2rem;
+    margin: 0 auto; }
+    #home-screen-1 .btn-cont .btn {
+      font-size: 1.4rem; }
+
+#home-screen-2 .screen-content {
+  height: 400px;
+  flex-direction: column; }
+  #home-screen-2 .screen-content .value-img-container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto; }
+    #home-screen-2 .screen-content .value-img-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  #home-screen-2 .screen-content.screen-text {
+    padding: 0 2rem; }
+    #home-screen-2 .screen-content.screen-text .value-title {
+      color: yellow;
+      font-weight: 900;
+      font-size: 2rem;
+      padding-bottom: 2rem;
+      position: relative; }
+    #home-screen-2 .screen-content.screen-text .value-description {
+      color: white;
+      font-size: 1.5rem;
+      width: 80%;
+      padding-bottom: 2rem;
+      padding-left: 1rem; }
+
+#home-screen-5 .pure-u-1:first-child .screen-content {
+  background-color: #F2931F;
+  position: relative;
+  z-index: 1; }
+#home-screen-5 .pure-u-1:nth-child(2) .screen-content {
+  background-color: #FF4D41; }
+#home-screen-5 .pb-title {
+  text-align: center;
+  color: white;
+  font-weight: 900;
+  font-size: 2rem;
+  padding: 2rem 0; }
+#home-screen-5 .pb-description {
+  font-size: 1.5rem;
+  width: 80%;
+  padding-bottom: 2rem;
+  margin: 0 auto; }
+#home-screen-5 .solution-box {
+  width: 70vw;
+  margin-left: 15vw;
+  background: white;
+  position: relative;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 4rem; }
+  #home-screen-5 .solution-box:before {
+    content: '';
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    right: -7px;
+    top: -7px;
+    background-color: #E5CA21;
+    z-index: -1; }
+  #home-screen-5 .solution-box:after {
+    content: '';
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    left: -7px;
+    bottom: -7px;
+    background-color: #91B221;
+    z-index: -1; }
+
+#home-screen-6 {
+  text-align: center;
+  padding-bottom: 4rem; }
+  #home-screen-6 .screen-description {
+    padding: 3rem 0 2rem; }
+
+.home-project-container {
+  position: relative;
+  margin: 1rem; }
+  .home-project-container .home-project-img-cont {
+    height: 33vw;
+    margin: 0 auto;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1); }
+    .home-project-container .home-project-img-cont img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      background-color: white; }
+  .home-project-container .home-project-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 50%;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem 1rem; }
+    .home-project-container .home-project-text .home-project-title {
+      font-size: 1.8rem;
+      letter-spacing: 0.1rem;
+      padding-bottom: 0.5rem;
+      color: yellow;
+      text-transform: uppercase;
+      font-family: "Oswald", Helvetica; }
+    .home-project-container .home-project-text .home-project-description {
+      font-size: 1.3rem; }
+
+.project-box {
+  width: 50%;
+  margin: 0 auto;
+  padding: 1rem 0 2rem;
+  border-bottom: 1px solid yellow;
+  color: #333; }
+  .project-box .project-img-container {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto; }
+    .project-box .project-img-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      background-color: white; }
+  .project-box .project-text-container {
+    text-align: center;
+    font-size: 1rem;
+    padding: 2rem 0 0; }
+    .project-box .project-text-container .project-title {
+      font-size: 1.8rem;
+      padding-bottom: 1rem;
+      color: yellow; }
+    .project-box .project-text-container .project-description {
+      font-size: 1.2rem; }
+
+#home-partners {
+  text-align: center; }
+  #home-partners h2.home-subtitle {
+    margin: 0;
+    color: yellow;
+    font-weight: 900;
+    font-size: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+    position: relative; }
+  #home-partners .home-partner-logo-cont {
+    width: 270px;
+    padding: 2rem;
+    display: inline-block;
+    vertical-align: middle; }
+    #home-partners .home-partner-logo-cont img {
+      width: 100%; }
+
+footer {
+  background-color: yellow;
+  color: black;
+  padding: 2rem; }
+  footer p {
+    margin: 0;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    font-weight: 600; }
+  footer a {
+    color: black; }
+
+/*# sourceMappingURL=style.css.map */
