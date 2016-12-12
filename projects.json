@@ -18,5 +18,10 @@
     "title": "Ahead", 
     "description": "Boutique en ligne de produits innovants",
     "image_url": "https://ahead.fr/wp-content/themes/onepage/images/flyte/royal_y_square.png"
+  },
+  {
+    "title": "Priswing", 
+    "description": "Première solution automatisée de pricing dynamique dans le golf",
+    "image_url": "http://www.priswing.com/static/img/logos/priswing_logo_292_292.png"
   }
 ]

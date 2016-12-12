@@ -292,30 +292,39 @@ nav {
       font-size: 1.3rem; }
 
 .project-box {
-  width: 50%;
+  position: relative;
+  width: 80%;
   margin: 0 auto;
-  padding: 1rem 0 2rem;
-  border-bottom: 1px solid yellow;
-  color: #333; }
+  padding: 2rem 0;
+  text-align: left; }
   .project-box .project-img-container {
-    width: 300px;
+    width: 100%;
     height: 300px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    -webkit-filer: grayscale(1);
+    filter: grayscale(1); }
     .project-box .project-img-container img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       background-color: white; }
   .project-box .project-text-container {
-    text-align: center;
     font-size: 1rem;
-    padding: 2rem 0 0; }
+    padding: 0 2rem 0; }
     .project-box .project-text-container .project-title {
       font-size: 1.8rem;
       padding-bottom: 1rem;
       color: yellow; }
     .project-box .project-text-container .project-description {
       font-size: 1.2rem; }
+  .project-box:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    width: 50%;
+    border-bottom: 1px solid yellow; }
 
 #home-partners {
   text-align: center; }
@@ -334,6 +343,41 @@ nav {
     vertical-align: middle; }
     #home-partners .home-partner-logo-cont img {
       width: 100%; }
+
+.team-cont {
+  text-align: center; }
+
+.teammate-cont {
+  width: 300px;
+  max-width: calc(100vw - 2rem);
+  margin: 1rem;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left; }
+  .teammate-cont .teammate-img-cont {
+    width: 100%;
+    height: 300px;
+    max-height: calc(100vw - 2rem);
+    -webkit-filer: grayscale(1);
+    filter: grayscale(1); }
+    .teammate-cont .teammate-img-cont img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .teammate-cont .teammate-text-cont .teammate-name {
+    background-color: yellow;
+    color: black;
+    font-family: 'Oswald', Helvetica;
+    font-size: 1.6rem;
+    padding: 0.5rem;
+    letter-spacing: 0.05rem; }
+  .teammate-cont .teammate-text-cont .teammate-one-liner {
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: yellow; }
+  .teammate-cont .teammate-text-cont .teammate-description {
+    font-size: 1.1rem; }
 
 footer {
   background-color: yellow;

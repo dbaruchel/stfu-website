@@ -356,15 +356,17 @@ nav {
 }
 
 .project-box {
-  width: 50%;
+  position:relative;
+  width: 80%;
   margin:0 auto;
-  padding:1rem 0 2rem;
-  border-bottom:1px solid yellow;
-  color: #333;
+  padding:2rem 0;
+  text-align: left;
   .project-img-container {
-    width: 300px;
+    width: 100%;
     height: 300px;
     margin:0 auto;
+    -webkit-filer:grayscale(1);
+    filter:grayscale(1);
     img {
       width: 100%;
       height: 100%;
@@ -373,9 +375,8 @@ nav {
     }
   }
   .project-text-container {
-    text-align:center;
     font-size: 1rem;
-    padding: 2rem 0 0;
+    padding: 0 2rem 0;
     .project-title {
       font-size: 1.8rem;
       padding-bottom:1rem;
@@ -384,6 +385,15 @@ nav {
     .project-description {
       font-size: 1.2rem;
     }
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    right:0;
+    bottom: 0;
+    height: 1px;
+    width: 50%;
+    border-bottom:1px solid yellow;
   }
 }
 
@@ -416,6 +426,51 @@ nav {
     vertical-align: middle;
     img {
       width: 100%;
+    }
+  }
+}
+
+.team-cont {
+  text-align:center;
+
+}
+
+.teammate-cont {
+  width: 300px;
+  max-width: calc(100vw - 2rem);
+  margin:1rem;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  .teammate-img-cont {
+    width: 100%;
+    height: 300px;
+    max-height: calc(100vw - 2rem);
+    -webkit-filer:grayscale(1);
+    filter:grayscale(1);
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit:cover;
+    }
+  }
+  .teammate-text-cont {
+    .teammate-name {
+      background-color: yellow;
+      color: black;
+      font-family: 'Oswald', Helvetica;
+      font-size: 1.6rem;
+      padding: 0.5rem;
+      letter-spacing: 0.05rem;
+    }
+    .teammate-one-liner {
+      padding: 0.5rem 0;
+      font-size:1.1rem;
+      text-transform: uppercase;
+      color: yellow;
+    }
+    .teammate-description {
+      font-size:1.1rem;
     }
   }
 }

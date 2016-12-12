@@ -1,3 +1,12 @@
 extends layout.pug
 block content
   h1.screen-title L'Equipe
+  section.team-cont
+    each teammate in teammates
+      .teammate-cont
+        .teammate-img-cont
+          img(src=teammate.image_url)
+        .teammate-text-cont
+          .teammate-name #{teammate.name}
+          .teammate-one-liner #{teammate.one_liner}
+          .teammate-description #{teammate.description}

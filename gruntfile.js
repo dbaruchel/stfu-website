@@ -8,6 +8,7 @@ module.exports = function(grunt) {
           data: {
             projects: grunt.file.readJSON('projects.json'),
             missions: grunt.file.readJSON('missions.json'),
+            teammates: grunt.file.readJSON('team.json'),
           }
         },
         files: {
