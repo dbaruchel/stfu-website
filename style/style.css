@@ -39,6 +39,11 @@ html, button, input, select, textarea,
   -webkit-align-items: center;
   align-items: center; }
 
+.btn-cont {
+  text-align: center;
+  padding: 2.5rem 0 2rem;
+  margin: 0 auto; }
+
 .btn {
   padding: 0.8rem 1.8rem;
   border: 3px solid;
@@ -63,10 +68,9 @@ header {
     text-align: center; }
     header .header-text .header-title {
       color: yellow;
-      font-size: 2.5rem;
       padding-bottom: 1rem;
       font-weight: 100;
-      font-size: 4rem;
+      font-size: 4.4rem;
       letter-spacing: 0.05em;
       text-transform: uppercase;
       margin: 0;
@@ -145,13 +149,12 @@ nav {
   text-align: center;
   margin: 0; }
 
-.home-screen {
-  width: 100%; }
-  .home-screen .screen-description {
-    font-size: 1.5rem;
-    width: 60%;
-    padding-bottom: 2rem;
-    margin: 0 auto; }
+.screen-description {
+  font-size: 1.5rem;
+  width: 60%;
+  padding: 3rem 0 2rem;
+  margin: 0 auto;
+  text-align: center; }
 
 #home-screen-1 {
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/purple-gang.jpg");
@@ -175,11 +178,7 @@ nav {
       color: yellow;
       display: inline-block;
       background-color: black; }
-  #home-screen-1 .btn-cont {
-    text-align: center;
-    padding: 2.5rem 0 2rem;
-    margin: 0 auto; }
-    #home-screen-1 .btn-cont .btn {
+    #home-screen-1 .description-text .btn {
       font-size: 1.4rem; }
 
 #home-screen-2 .screen-content {
@@ -256,8 +255,6 @@ nav {
 #home-screen-6 {
   text-align: center;
   padding-bottom: 4rem; }
-  #home-screen-6 .screen-description {
-    padding: 3rem 0 2rem; }
 
 .home-project-container {
   position: relative;
@@ -292,30 +289,39 @@ nav {
       font-size: 1.3rem; }
 
 .project-box {
-  width: 50%;
+  position: relative;
+  width: 80%;
   margin: 0 auto;
-  padding: 1rem 0 2rem;
-  border-bottom: 1px solid yellow;
-  color: #333; }
+  padding: 2rem 0;
+  text-align: left; }
   .project-box .project-img-container {
-    width: 300px;
+    width: 100%;
     height: 300px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    -webkit-filer: grayscale(1);
+    filter: grayscale(1); }
     .project-box .project-img-container img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       background-color: white; }
   .project-box .project-text-container {
-    text-align: center;
     font-size: 1rem;
-    padding: 2rem 0 0; }
+    padding: 0 2rem 0; }
     .project-box .project-text-container .project-title {
       font-size: 1.8rem;
       padding-bottom: 1rem;
       color: yellow; }
     .project-box .project-text-container .project-description {
       font-size: 1.2rem; }
+  .project-box:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    width: 50%;
+    border-bottom: 1px solid yellow; }
 
 #home-partners {
   text-align: center; }
@@ -324,7 +330,6 @@ nav {
     color: yellow;
     font-weight: 900;
     font-size: 2rem;
-    padding-top: 2rem;
     padding-bottom: 0.5rem;
     position: relative; }
   #home-partners .home-partner-logo-cont {
@@ -334,6 +339,41 @@ nav {
     vertical-align: middle; }
     #home-partners .home-partner-logo-cont img {
       width: 100%; }
+
+.team-cont {
+  text-align: center; }
+
+.teammate-cont {
+  width: 300px;
+  max-width: calc(100vw - 2rem);
+  margin: 1rem;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left; }
+  .teammate-cont .teammate-img-cont {
+    width: 100%;
+    height: 300px;
+    max-height: calc(100vw - 2rem);
+    -webkit-filer: grayscale(1);
+    filter: grayscale(1); }
+    .teammate-cont .teammate-img-cont img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .teammate-cont .teammate-text-cont .teammate-name {
+    background-color: yellow;
+    color: black;
+    font-family: 'Oswald', Helvetica;
+    font-size: 1.6rem;
+    padding: 0.5rem;
+    letter-spacing: 0.05rem; }
+  .teammate-cont .teammate-text-cont .teammate-one-liner {
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: yellow; }
+  .teammate-cont .teammate-text-cont .teammate-description {
+    font-size: 1.1rem; }
 
 footer {
   background-color: yellow;
