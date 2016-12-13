@@ -46,6 +46,12 @@ html, button, input, select, textarea,
   align-items: center;
 }
 
+.btn-cont {
+  text-align: center;
+  padding: 2.5rem 0 2rem;
+  margin:0 auto;
+}
+
 .btn {
   padding: 0.8rem 1.8rem;
   border: 3px solid;
@@ -72,10 +78,9 @@ header {
     text-align: center;
     .header-title {
       color: yellow;
-      font-size: 2.5rem;
       padding-bottom: 1rem;
       font-weight: 100;
-      font-size: 4rem;
+      font-size: 4.4rem;
       letter-spacing: 0.05em;
       text-transform: uppercase;
       margin: 0;
@@ -169,16 +174,12 @@ nav {
   margin:0;
 }
 
-
-.home-screen {
-  width: 100%;
-
-  .screen-description {
-    font-size: 1.5rem;
-    width: 60%;
-    padding-bottom:2rem;
-    margin: 0 auto;
-  }
+.screen-description {
+  font-size: 1.5rem;
+  width: 60%;
+  padding:3rem 0 2rem;
+  margin: 0 auto;
+  text-align: center;
 }
 
 #home-screen-1 {
@@ -204,16 +205,13 @@ nav {
       display: inline-block;
       background-color: black;
     }
-  }
-  .btn-cont {
-    text-align: center;
-    padding: 2.5rem 0 2rem;
-    margin:0 auto;
     .btn {
       font-size: 1.4rem;
     }
   }
 }
+
+
 
 #home-screen-2 {
   .screen-content {
@@ -312,9 +310,6 @@ nav {
 #home-screen-6 {
   text-align: center;
   padding-bottom: 4rem;
-  .screen-description {
-    padding: 3rem 0 2rem;
-  }
 }
 
 .home-project-container {
@@ -415,7 +410,6 @@ nav {
     color:yellow;
     font-weight: 900;
     font-size: 2rem;
-    padding-top: 2rem;
     padding-bottom: 0.5rem;
     position: relative;
   }

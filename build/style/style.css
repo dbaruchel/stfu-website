@@ -39,6 +39,11 @@ html, button, input, select, textarea,
   -webkit-align-items: center;
   align-items: center; }
 
+.btn-cont {
+  text-align: center;
+  padding: 2.5rem 0 2rem;
+  margin: 0 auto; }
+
 .btn {
   padding: 0.8rem 1.8rem;
   border: 3px solid;
@@ -63,10 +68,9 @@ header {
     text-align: center; }
     header .header-text .header-title {
       color: yellow;
-      font-size: 2.5rem;
       padding-bottom: 1rem;
       font-weight: 100;
-      font-size: 4rem;
+      font-size: 4.4rem;
       letter-spacing: 0.05em;
       text-transform: uppercase;
       margin: 0;
@@ -145,13 +149,12 @@ nav {
   text-align: center;
   margin: 0; }
 
-.home-screen {
-  width: 100%; }
-  .home-screen .screen-description {
-    font-size: 1.5rem;
-    width: 60%;
-    padding-bottom: 2rem;
-    margin: 0 auto; }
+.screen-description {
+  font-size: 1.5rem;
+  width: 60%;
+  padding: 3rem 0 2rem;
+  margin: 0 auto;
+  text-align: center; }
 
 #home-screen-1 {
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/purple-gang.jpg");
@@ -175,11 +178,7 @@ nav {
       color: yellow;
       display: inline-block;
       background-color: black; }
-  #home-screen-1 .btn-cont {
-    text-align: center;
-    padding: 2.5rem 0 2rem;
-    margin: 0 auto; }
-    #home-screen-1 .btn-cont .btn {
+    #home-screen-1 .description-text .btn {
       font-size: 1.4rem; }
 
 #home-screen-2 .screen-content {
@@ -256,8 +255,6 @@ nav {
 #home-screen-6 {
   text-align: center;
   padding-bottom: 4rem; }
-  #home-screen-6 .screen-description {
-    padding: 3rem 0 2rem; }
 
 .home-project-container {
   position: relative;
@@ -333,7 +330,6 @@ nav {
     color: yellow;
     font-weight: 900;
     font-size: 2rem;
-    padding-top: 2rem;
     padding-bottom: 0.5rem;
     position: relative; }
   #home-partners .home-partner-logo-cont {
