@@ -77,17 +77,30 @@ html, button, input, select, textarea,
   }
 }
 
+.hide-on-med-and-down {
+  display: none;
+}
+
+@media screen and (min-width: 48em) {
+  .hide-on-med-and-down {
+    display: block;
+  }
+  .hide-on-lg {
+    display: none;
+  }
+}
+
 header {
   background-color:black;
   .header-text {
-    padding: 3rem;
+    padding: 1rem;
     width: 100%;
     text-align: center;
     .header-title {
       color: yellow;
       padding-bottom: 1rem;
       font-weight: 100;
-      font-size: 4.4rem;
+      font-size: 3rem;
       letter-spacing: 0.05em;
       text-transform: uppercase;
       margin: 0;
@@ -100,11 +113,28 @@ header {
       }
     }
     .header-description {
-      font-size: 1.8rem;
+      font-size: 1.4rem;
       font-weight: 300;
       margin:0;
       padding-bottom:1rem;
       color:white;
+    }
+  }
+}
+@media screen and (min-width: 48em) {
+  header {
+    .header-text {
+      padding: 3rem;
+      .header-title {
+        font-size: 4.4rem;
+      }
+      .header-description {
+        font-size: 1.8rem;
+        font-weight: 300;
+        margin:0;
+        padding-bottom:1rem;
+        color:white;
+      }
     }
   }
 }
@@ -125,14 +155,14 @@ nav {
       display: inline-block;
       a {
         display: block;
-        padding: 0 1.5rem;
+        padding: 0 0.8rem;
         border-bottom:5px solid transparent;
         transition: 0.1s;
         cursor: pointer;
         text-decoration: none;
         text-transform: uppercase;
         font-weight: 700;
-        font-size: 1.2rem;
+        font-size: 0.9rem;
         color:black;
         &.active {
           border-color:black;
@@ -144,10 +174,11 @@ nav {
     }
   }
   .contact {
+    display: none;
     position:absolute;
     right:0;
     top:0;
-    display: block;
+    // display: block;
     padding: 0 1.5rem;
     border-bottom:5px solid transparent;
     transition: 0.1s;
@@ -170,6 +201,18 @@ nav {
     border-top: 0;
   }
 }
+@media screen and (min-width: 48em) {
+  nav {
+    li a {
+      padding: 0 1.5rem;
+      font-size: 1.2rem;
+    }
+    .contact {
+      display: block;
+    }
+  }
+}
+
 
 .screen-title {
   color: black;
@@ -178,7 +221,7 @@ nav {
   font-weight: 900;
   font-size: 2.5rem;
   padding: 1rem;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.2rem;
   text-transform: uppercase;
   text-align: center;
   margin:0;
@@ -186,10 +229,20 @@ nav {
 
 .screen-description {
   font-size: 1.5rem;
-  width: 60%;
-  padding:3rem 0 2rem;
+  width: 90%;
+  padding:2rem 0 2rem;
   margin: 0 auto;
   text-align: center;
+}
+
+@media screen and (min-width: 48em) {
+  .screen-title {
+    letter-spacing: 0.5rem;
+  }
+  .screen-description {
+    width: 60%;
+    padding:3rem 0 2rem;
+  }
 }
 
 #home-screen-1 {
@@ -197,19 +250,19 @@ nav {
   background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('../assets/purple-gang.jpg');
   background-position:center;
   background-size:cover;
-  padding:2rem 0;
+  padding:1rem 0;
   .description-text {
     text-align:center;
     color:white;
-    width: 60%;
+    width: 90%;
     margin:0 auto;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.5em;
     .motto {
-      padding: 1rem 2rem;
-      margin: 2rem 0;
-      font-size: 2rem;
+      padding: 1rem;
+      margin: 1rem 0;
+      font-size: 1.5rem;
       text-transform: uppercase;
       color: yellow;
       display: inline-block;
@@ -220,14 +273,24 @@ nav {
     }
   }
 }
-
-
+@media screen and (min-width: 48em) {
+  #home-screen-1 {
+    padding:2rem 0;
+    .description-text {
+      width: 60%;
+      font-size: 1.7rem;
+      .motto {
+        padding: 1rem 2rem;
+        margin: 2rem 0;
+        font-size: 2rem;
+      }
+    }
+  }
+}
 
 #home-screen-2 {
   .screen-content {
-    height: 400px;
     flex-direction: column;
-
     .value-img-container {
       width: 100%;
       height: 100%;
@@ -239,83 +302,110 @@ nav {
       }
     }
     &.screen-text {
-      padding:0 2rem;
+      padding:1rem;
       .value-title {
         color:yellow;
         font-weight: 900;
-        font-size: 2rem;
-        padding-bottom:2rem;
+        font-size: 1.6rem;
+        padding-bottom:1rem;
         position: relative;
       }
       .value-description {
         color:white;
-        font-size: 1.5rem;
-        width: 80%;
+        font-size: 1.3rem;
         padding-bottom:2rem;
-        padding-left: 1rem;
       }
     }
   }
 }
 
-
-
-#home-screen-5 {
-
-  .pure-u-1:first-child .screen-content{
-    background-color:$color2;
-    position: relative;
-    z-index: 1;
-  }
-  .pure-u-1:nth-child(2) .screen-content{
-    background-color:$color1;
-  }
-  .pb-title {
-    text-align:center;
-    color:white;
-    font-weight: 900;
-    font-size: 2rem;
-    padding: 2rem 0;
-  }
-
-  .pb-description {
-    font-size: 1.5rem;
-    width: 80%;
-    padding-bottom:2rem;
-    margin: 0 auto;
-  }
-
-  .solution-box {
-    width: 70vw;
-    margin-left: 15vw;
-    background: white;
-    position: relative;
-    padding: 2rem;
-    text-align: center;
-    font-size: 1.5rem;
-    margin-top: 4rem;
-    &:before {
-      content:'';
-      height:50px;
-      width: 100px;
-      position: absolute;
-      right:-7px;
-      top:-7px;
-      background-color:$color3;
-      z-index: -1;
-    }
-    &:after {
-      content:'';
-      height:50px;
-      width: 100px;
-      position: absolute;
-      left:-7px;
-      bottom:-7px;
-      background-color:$color4;
-      z-index: -1;
+@media screen and (min-width: 48em) {
+  #home-screen-2 {
+    .screen-content {
+      height: 400px;
+      // .value-img-container {
+      //   width: 100%;
+      //   height: 100%;
+      //   margin: 0 auto;
+      //   img {
+      //     width:100%;
+      //     height: 100%;
+      //     object-fit: cover;
+      //   }
+      // }
+      &.screen-text {
+        padding:0 2rem;
+        .value-title {
+          font-size: 2rem;
+          padding-bottom:2rem;
+        }
+        .value-description {
+          font-size: 1.5rem;
+          width: 80%;
+          padding-bottom:2rem;
+          padding-left: 1rem;
+        }
+      }
     }
   }
 }
+
+// #home-screen-5 {
+
+//   .pure-u-1:first-child .screen-content{
+//     background-color:$color2;
+//     position: relative;
+//     z-index: 1;
+//   }
+//   .pure-u-1:nth-child(2) .screen-content{
+//     background-color:$color1;
+//   }
+//   .pb-title {
+//     text-align:center;
+//     color:white;
+//     font-weight: 900;
+//     font-size: 2rem;
+//     padding: 2rem 0;
+//   }
+
+//   .pb-description {
+//     font-size: 1.5rem;
+//     width: 80%;
+//     padding-bottom:2rem;
+//     margin: 0 auto;
+//   }
+
+//   .solution-box {
+//     width: 70vw;
+//     margin-left: 15vw;
+//     background: white;
+//     position: relative;
+//     padding: 2rem;
+//     text-align: center;
+//     font-size: 1.5rem;
+//     margin-top: 4rem;
+//     &:before {
+//       content:'';
+//       height:50px;
+//       width: 100px;
+//       position: absolute;
+//       right:-7px;
+//       top:-7px;
+//       background-color:$color3;
+//       z-index: -1;
+//     }
+//     &:after {
+//       content:'';
+//       height:50px;
+//       width: 100px;
+//       position: absolute;
+//       left:-7px;
+//       bottom:-7px;
+//       background-color:$color4;
+//       z-index: -1;
+//     }
+//   }
+// }
 
 #home-screen-6 {
   text-align: center;
@@ -324,9 +414,8 @@ nav {
 
 .home-project-container {
   position:relative;
-  margin: 1rem;
   .home-project-img-cont {
-    height: 33vw;
+    height: 100vw;
     margin:0 auto;
     -webkit-filter:grayscale(1);
     filter:grayscale(1);
@@ -356,6 +445,15 @@ nav {
     }
     .home-project-description {
       font-size: 1.3rem;
+    }
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .home-project-container {
+    margin: 1rem;
+    .home-project-img-cont {
+      height: 33vw;
     }
   }
 }
@@ -424,12 +522,21 @@ nav {
     position: relative;
   }
   .home-partner-logo-cont {
-    width: 270px;
-    padding:2rem;
+    width: 180px;
+    padding:0.5rem;
     display: inline-block;
     vertical-align: middle;
     img {
       width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 48em) {
+  #home-partners {
+    .home-partner-logo-cont {
+      width: 270px;
+      padding:2rem;
     }
   }
 }
@@ -485,7 +592,7 @@ footer {
   padding:2rem;
   p {
     margin:0;
-    padding-bottom:1rem;
+    padding:1rem 0 0.5rem;
     text-transform: uppercase;
     font-weight: 600;
   }
