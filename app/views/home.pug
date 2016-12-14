@@ -1,5 +1,6 @@
 extends layout.pug
 block content
+  +navbar("index")
   section#home-screen-1
     .pure-g
       .pure-u-1
@@ -14,7 +15,8 @@ block content
           br
           |Nous vous aidons à formaliser votre idée et à la réaliser pour que vous la testiez rapidement.
         .btn-cont
-          button.btn Tester mon idée
+          button.btn
+            a(href="https://dbaruchel.typeform.com/to/ERD4by" target="_blank") Tester mon idée
   section#home-screen-2
     h1.screen-title Principes
     .pure-g
@@ -91,9 +93,11 @@ block content
     .pure-g
       .pure-u-1
         .btn-container
-          button.btn Tous les projets
+          button.btn 
+            a(href="projets.html") Tous les projets
           |&nbsp;&nbsp;
-          button.btn Toutes nos offres
+          button.btn 
+            a(href="offre.html") Toutes nos offres
 
   //- section#home-screen-7
   //-   include projects.pug

@@ -1,3 +1,17 @@
+mixin navbar(route)
+  nav
+    ul
+      li
+        a(href="index.html" class= route ==="index" ? "active" : "") Start
+      li
+        a(href="offre.html" class= route ==="offre" ? "active" : "") Offres
+      li
+        a(href="projets.html" class= route ==="projets" ? "active" : "") Projets
+      li
+        a(href="equipe.html" class= route ==="equipe" ? "active" : "") Equipe
+    
+    a.contact(style="float:right;" href="https://dbaruchel.typeform.com/to/ERD4by" target="_blank") Contact
+
 header
   .header-text
     h1.header-title Start The F#[i.fa.fa-bolt]#[i.fa.fa-bolt]#[i.fa.fa-bolt] Up
@@ -5,14 +19,3 @@ header
       |Passez de l’idée à la preuve de concept avec 
       br
       |l’aide de notre collectif d’entrepreneurs.
-  nav
-    ul
-      li
-        a(href="index.html") Start
-      li
-        a(href="offre.html") Offres
-      li
-        a(href="projets.html") Projets
-      li
-        a(href="equipe.html") Equipe
-    .contact(style="float:right;") Contact

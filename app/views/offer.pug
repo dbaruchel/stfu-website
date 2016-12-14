@@ -1,5 +1,6 @@
 extends layout.pug
 block content
+  +navbar("offre")
   #offer-page
     h1.screen-title Offres
     .screen-description
@@ -47,7 +48,11 @@ block content
                 |Nous développons votre idée comme si c'était notre startup: étude du besoin, conception, développement d'une V1 minimale, tests utilisateurs, et mise sur le marché.
 
     .btn-cont
-      button.btn Voir nos réalisations
+      button.btn 
+        a(href="projets.html") Voir nos réalisations
+      |&nbsp;&nbsp;
+      button.btn
+        a(href="https://dbaruchel.typeform.com/to/ERD4by" target="_blank") Je me lance
 
 
   //- section#home-screen-5
