@@ -56,9 +56,14 @@ html, button, input, select, textarea,
   font-weight: 600;
   transition: 0.2s;
   cursor: pointer; }
+  .btn a {
+    color: yellow;
+    text-decoration: none; }
   .btn:hover {
     background-color: yellow;
     color: black; }
+    .btn:hover a {
+      color: black; }
 
 header {
   background-color: black; }
@@ -96,21 +101,23 @@ nav {
   nav ul {
     margin: 0;
     padding: 0;
-    text-align: center; }
+    text-align: center;
+    font-size: 0;
+    height: 55px; }
     nav ul li {
       display: inline-block; }
       nav ul li a {
         display: block;
         padding: 0 1.5rem;
-        border-bottom: 3px solid transparent;
+        border-bottom: 5px solid transparent;
         transition: 0.1s;
         cursor: pointer;
         text-decoration: none;
         text-transform: uppercase;
         font-weight: 700;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         color: black; }
-        nav ul li a:active {
+        nav ul li a.active {
           border-color: black; }
         nav ul li a:hover {
           border-color: black; }
@@ -120,13 +127,14 @@ nav {
     top: 0;
     display: block;
     padding: 0 1.5rem;
-    border-bottom: 3px solid transparent;
+    border-bottom: 5px solid transparent;
     transition: 0.1s;
     cursor: pointer;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 1.1rem; }
+    font-size: 1.1rem;
+    color: black; }
     nav .contact:hover {
       border-color: black; }
   nav.sticky-nav {
