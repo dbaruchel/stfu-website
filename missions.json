@@ -1,22 +1,22 @@
 [
   {
-    "title": "ConquerYourDay", 
-    "description": "Conception et réalisation d'une app de sport cross-plateformes.",
+    "title": "SE MOTIVER À COURIR", 
+    "description": "Conception et développement de l'app d'une communauté de sportifs.<br><br><u>L'Objectif:</u> créer une app cross-platform pour s'inscrire rapidement à des groupes de sport, suivre sa progression, et être tenue au courant des nouvelles de la communauté.",
     "image_url": "assets/photo-snippet-old.png"
   },
   {
-    "title": "Schoolab", 
-    "description": "Organisation et Animation de Hackathons",
+    "title": "BIEN-ETRE AU TRAVAIL", 
+    "description": "Workshop d'une journée en partenariat avec le Schoolab.<br><br><u>L'Objectif:</u> imaginer des solutions pour instaurer de la confiance et améliorer le bien-être des employés une compagnie d'assurance.",
+    "image_url": "assets/mik-workshop.jpg"
+  },
+  {
+    "title": "AIDER LES INTRAPRENEURS", 
+    "description": "Hackathon de 48h avec les fondateurs du Creart'up Intrapreneurship Tour.<br><br><u>L'Objectif:</u> prototyper une plateforme pour stimuler l'innovation en entreprise.",
     "image_url": "assets/hackathon.jpg"
   },
   {
-    "title": "BNP", 
-    "description": "Hackathons internes",
-    "image_url": "https://static1.squarespace.com/static/532b5e76e4b02b8c350efe7d/t/5358281fe4b0efa858ed4b6d/1398286369456/bnp-paribas-logo.jpg"
-  },
-  {
-    "title": "Creartup Intrapreneurship Tour", 
-    "description": "Atelier de design thinking autour de l'intrapreneuriat",
-    "image_url": "assets/mik-workshop.jpg"
+    "title": "FUSIONNER DEUX EQUIPES", 
+    "description": "Workshop d'une journée en partenariat avec le Schoolab.<br><br><u>L'Objectif:</u> Développer des solutions permettant à deux équipes d'une banque, de mieux se connaître, communiquer et travailler ensemble.",
+    "image_url": "assets/david-workshop.jpg"
   }
 ]

@@ -11,8 +11,8 @@ block content
               img(src=mission.image_url)
           .pure-u-1.pure-u-md-1-2
             .project-text-container
-              .project-title #{mission.title}   
-              .project-description #{mission.description}
+              .project-title!=mission.title  
+              .project-description!=mission.description
     .btn-cont
       button.btn
         a(href="https://dbaruchel.typeform.com/to/ERD4by" target="_blank") A mon tour

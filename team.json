@@ -2,7 +2,7 @@
   {
     "name": "Damien Lemarie", 
     "one_liner": "founder @ Priswing",
-    "description":"This can be a longer description describing what you do, what you like, and should be a bit funny or punchy as well.",
+    "description":"Avec ses Masters de L'Ecole Polytechnique et d'Imperial College, Dams serait capable de vous réparer un moteur d'avion. Mais il se contente d'être développeur full-stack, Data Scientist, et de coder des algos de Machine Learning. Enfin, quand il ne joue pas au golf...",
     "profile_url":"https://fr.linkedin.com/in/damien-lemarié-952a428a",
     "image_url": "https://media.licdn.com/media/AAEAAQAAAAAAAAXEAAAAJGQ4ZTgxODhjLWI2OTEtNDIzNy05ZjRiLTQ3NWRkNmJlMDQwOA.jpg"
   },
@@ -16,7 +16,7 @@
   {
     "name": "Ganaël Bascoul", 
     "one_liner": "founder @ Monsieur Barbier",
-    "description":"This can be a longer description describing what you do, what you like, and should be a bit funny or punchy as well.",
+    "description":"Après avoir lancé un des premiers magazines d'innovation, ce serial entrepreneur se lance dans le rasage ! Gana donne aussi des cours de marketing à l'ESCP. Si vous voulez le remercier, offrez-lui un album de Bob Dylan.",
     "profile_url":"https://fr.linkedin.com/in/ganael/fr",
     "image_url": "https://media.licdn.com/media/p/3/005/05f/177/1ba3490.jpg"
   },
@@ -25,7 +25,7 @@
     "one_liner": "co-founder @ Biotheca",
     "description":"This can be a longer description describing what you do, what you like, and should be a bit funny or punchy as well.",
     "profile_url":"https://fr.linkedin.com/in/jeangabillet",
-    "image_url": "https://media.licdn.com/media/AAEAAQAAAAAAAAjEAAAAJDEzZDA4YjNiLTc4NGEtNDk3NC1hNGY1LWUxOWQ1NzEwYTkyMQ.jpg"
+    "image_url": "https://media.licdn.com/media/AAEAAQAAAAAAAAmGAAAAJDc1NTRjZDc3LWM4NGUtNDE5Yi04NTNlLWE1YTYyYzk2NGM4OQ.jpg"
   },
   {
     "name": "Mickaël Coenca", 
@@ -71,8 +71,8 @@
   },
   {
     "name": "Raphaël Dumont", 
-    "one_liner": "founder @ la Famille",
-    "description":"This can be a longer description describing what you do, what you like, and should be a bit funny or punchy as well.",
+    "one_liner": "co-founder @ BuyIdeas",
+    "description":"La légende dit que Raph a fait son premier e-commerce en maternelle. Spécialiste en communication et gestion de projet 360°, c'est une référence pour tous vos besoins en digital, print, 3D et événementiel.",
     "profile_url":"https://fr.linkedin.com/in/raphaeldumont",
     "image_url": "https://media.licdn.com/media/AAEAAQAAAAAAAAh1AAAAJGQ2MTkxNjc2LTg2MDEtNGI1NC04ZTMxLWY1OTczYzcwNzBkOA.jpg"
   }
