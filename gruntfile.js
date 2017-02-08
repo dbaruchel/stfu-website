@@ -1,4 +1,5 @@
 module.exports = function(grunt) {
+  require('load-grunt-tasks')(grunt);
   // Project configuration.
   grunt.initConfig({
     pug: {
@@ -48,7 +49,6 @@ module.exports = function(grunt) {
   });
   // These plugins provide necessary tasks.
   grunt.loadNpmTasks('grunt-contrib-pug');
-  grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks("grunt-contrib-copy");
   // Default task.

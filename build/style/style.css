@@ -2,7 +2,7 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: black;
+  background-color: white;
   font-size: 15px;
   color: white; }
 
@@ -71,9 +71,9 @@ html, button, input, select, textarea,
 @media screen and (min-width: 48em) {
   .hide-on-med-and-down {
     display: block; }
-
   .hide-on-lg {
     display: none; } }
+
 header {
   background-color: black;
   background-image: -webkit-linear-gradient(rgba(0, 27, 92, 0.3), #001b5c), url("http://orig01.deviantart.net/8a4a/f/2012/240/5/f/thunderstorm_high_res__gif_animation_by_lokeboye-d5cr7f7.gif");
@@ -116,6 +116,7 @@ header {
       margin: 0;
       padding-bottom: 1rem;
       color: white; } }
+
 nav {
   line-height: 50px;
   padding: 0;
@@ -175,6 +176,7 @@ nav {
     font-size: 1.2rem; }
   nav .contact {
     display: block; } }
+
 .screen-title {
   color: black;
   font-family: "Oswald", Helvetica;
@@ -197,10 +199,10 @@ nav {
 @media screen and (min-width: 48em) {
   .screen-title {
     letter-spacing: 0.5rem; }
-
   .screen-description {
     width: 60%;
     padding: 3rem 0 2rem; } }
+
 #home-screen-1 {
   padding: 1rem 0; }
   #home-screen-1 .description-text {
@@ -247,6 +249,7 @@ nav {
         padding: 0 2rem 1rem;
         margin: 1rem 0;
         font-size: 1.9rem; } }
+
 #home-screen-2 .screen-content {
   flex-direction: column; }
   #home-screen-2 .screen-content .value-img-container {
@@ -283,6 +286,7 @@ nav {
         width: 80%;
         padding-bottom: 2rem;
         padding-left: 1rem; } }
+
 #home-screen-6 {
   text-align: center;
   padding-bottom: 4rem; }
@@ -323,6 +327,7 @@ nav {
     margin: 1rem; }
     .home-project-container .home-project-img-cont {
       height: 33vw; } }
+
 .project-box {
   position: relative;
   width: 80%;
@@ -379,6 +384,7 @@ nav {
   #home-partners .home-partner-logo-cont {
     width: 270px;
     padding: 2rem; } }
+
 .team-cont {
   text-align: center; }
 
@@ -425,5 +431,3 @@ footer {
     font-weight: 600; }
   footer a {
     color: black; }
-
-/*# sourceMappingURL=style.css.map */
