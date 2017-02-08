@@ -1,27 +1,38 @@
 [
   {
     "title": "Monsieur Barbier", 
-    "description": "E-commerce de Produits de Rasage",
-    "image_url": "https://www.monsieurbarbier.com/img/Coffret-Rasage-Old-School-Naturel.jpg"
+    "description": "Né en 2013 de la cuisse de Jupiter, qui lui a transmis tous les secrets d'une barbe et d'un rasage parfait, Monsieur Barbier vend par abonnement ses rasoirs haut-de-gamme* /*n.d.l.r. sans engagemement, alors pas de \"oui, mais après tu vois...\" / et développe les meilleurs produits des rasage que la Terre ait portée depuis l'Antiquité - et oui ils sont français, quoi d'autre?  comme dirait l'autre.",
+    "image_url": "assets/monsieurbarbier.png",
+    "project_url":"www.monsieurbarbier.com"
   },
   {
     "title": "SoonSoonSoon", 
-    "description": "Webzine d'innovation",
-    "image_url": "http://www.tedxistec.com/wp-content/uploads/2015/02/LOGO-Soon-Soon-Soon-1.png"
+    "description": "Premier magazine de tendances 100% crowd-sourcé sous les aisselles par une communauté de plus de 1000 éclaireurs francophones aux quatre coins du monde, SoonSoonSoon officie aujourd'hui aussi comme agence de tendances auprès des multinationales, et comme point de rencontre de tous ceux qui bricolent, innovent, cuisinent et refont le monde.",
+    "image_url": "assets/soonsoonsoon.png",
+    "project_url":"www.soonsoonsoon.com"
   },
   {
     "title": "Bridges", 
-    "description": "Réseau collaboratif de partage de culture",
-    "image_url": "http://cdn.overbridges.com/aws/unsafe/origxorig/public/bridges-thumbnail-800.png"
+    "description": "Sur Internet, on voit toujours la même chose ? c'est une perte de temps ? Pas sur Bridges, un réseau collaboratif où l'on partage sa culture et on découvre celle des autres. Le web n'a jamais été aussi enrichissant !",
+    "image_url": "assets/bridges.png",
+    "project_url":"www.bridges.land"
   },
   {
     "title": "Ahead", 
-    "description": "Boutique en ligne de produits innovants",
-    "image_url": "https://ahead.fr/wp-content/themes/onepage/images/flyte/royal_y_square.png"
+    "description": "Amazon, Fnac, Boulanger... Difficile de trouver un produit original ou excitant, ils se suivent et se ressemblent ! Ahead propose une sélection temporaire de produits design testés et approuvés, chaque saison.",
+    "image_url": "assets/ahead.png",
+    "project_url":"www.ahead.fr"
   },
   {
     "title": "Priswing", 
-    "description": "Première solution automatisée de pricing dynamique dans le golf",
-    "image_url": "http://www.priswing.com/static/img/logos/priswing_logo_292_292.png"
+    "description": "Chez Priswing, on développe un SaaS de Pricing Dynamique couplé à du Business Analytics. Et parce qu'on a bien lu Zero to One, on n'a pas hésité à le faire pour un marché de niche : le golf. On close littéralement nos deals en faisant du golf !",
+    "image_url": "assets/priswing.png",
+    "project_url":"www.priswing.com"
+  },
+  {
+    "title": "TechBakery", 
+    "description": "Techbakery fait discuter l’artisanat et la production de masse chinoise pour inventer le système industriel de demain. A l’intersection de la méga usine robotisée/automatisée et du boulanger de quartier qui accompagne son croissant chaud d’un sourire, nous permettons d’éclater la production dans chaque ville, au plus proche des utilisateurs pour plus de réactivité et plus d’adaptabilité.",
+    "image_url": "assets/techbakery.png",
+    "project_url":"www.techbakery.co"
   }
 ]

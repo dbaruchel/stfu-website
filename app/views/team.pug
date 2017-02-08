@@ -8,7 +8,10 @@ block content
         .teammate-img-cont
           img(src=teammate.image_url)
         .teammate-text-cont
-          .teammate-name #{teammate.name}
+          .teammate-name 
+            |#{teammate.name}
+            a(target="_blank" href=teammate.profile_url)
+              i.fa.fa-external-link-square
           .teammate-one-liner #{teammate.one_liner}
           .teammate-description #{teammate.description}
 
@@ -18,7 +21,7 @@ block content
 
   h1.screen-title Nos Projets
   each project in projects
-    .project-box
+    .project-box.project-team
       .pure-g
         .pure-u-1.pure-u-md-1-2
           .project-img-container
@@ -27,3 +30,5 @@ block content
           .project-text-container
             .project-title #{project.title}   
             .project-description #{project.description}
+            .project-url
+              a(target="_blank" href='http://'+ project.project_url) #{project.project_url}
