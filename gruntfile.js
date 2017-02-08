@@ -53,4 +53,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-contrib-copy");
   // Default task.
   grunt.registerTask('default',['pug', 'sass', 'copy', 'watch']);
+  grunt.registerTask('build',['pug', 'sass', 'copy']);
 };
