@@ -13,13 +13,13 @@
     "profile_url":"https://about.me/davidbaruchel",
     "image_url": "https://media.licdn.com/media/p/3/005/0ae/230/1f6fa62.jpg"
   },
-  {
-    "name": "Ganaël Bascoul", 
-    "one_liner": "founder @ Monsieur Barbier",
-    "description":"Après avoir lancé un des premiers magazines d'innovation, ce serial entrepreneur se lance dans le rasage ! Gana donne aussi des cours de marketing à l'ESCP. Si vous voulez le remercier, offrez-lui un album de Bob Dylan.",
-    "profile_url":"https://fr.linkedin.com/in/ganael/fr",
-    "image_url": "https://media.licdn.com/media/p/3/005/05f/177/1ba3490.jpg"
-  },
+  // {
+  //   "name": "Ganaël Bascoul", 
+  //   "one_liner": "founder @ Monsieur Barbier",
+  //   "description":"Après avoir lancé un des premiers magazines d'innovation, ce serial entrepreneur se lance dans le rasage ! Gana donne aussi des cours de marketing à l'ESCP. Si vous voulez le remercier, offrez-lui un album de Bob Dylan.",
+  //   "profile_url":"https://fr.linkedin.com/in/ganael/fr",
+  //   "image_url": "https://media.licdn.com/media/p/3/005/05f/177/1ba3490.jpg"
+  // },
   {
     "name": "Jean Gabillet", 
     "one_liner": "co-founder @ Biotheca",
