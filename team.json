@@ -14,6 +14,14 @@
     "image_url": "https://media.licdn.com/media/p/3/005/0ae/230/1f6fa62.jpg"
   },
   {
+    "name": "Arnaud Albalat", 
+    "one_liner": "co-founder @ Breakers",
+    "description":"Titulaire de masters de l'X et l'ENS, ancien de Facebook & Microsoft où il a développé un algorithme de génération automatique de playlists, Arnaud a un sens du détail aiguisé lorsqu'il s'agit de développer des applications ergonomiques et intuitives. Frère d'arme de Jean depuis 4 ans, il a co-fondé Projectiv et Breakers avec lui.",
+    "profile_url":"http://breakers.tech",
+    "image_url": "https://files.slack.com/files-tmb/T2W984NE8-F4Y2QQFLH-145238025c/arnaud_2_1024.jpg"
+  },
+
+  {
     "name": "Jean Gabillet", 
     "one_liner": "co-founder @ Biotheca",
     "description":"Jean, c'est un peu notre maître Yoda. Équilibre, santé, bien être et relations humaines sont ses maître mots. Après un master d'entrepreneuriat entre Polytechnique et Berkeley, il a monté Biotheca, une hotline de la nutrition: \"May your Nutritionist be with you !\". Il apporte maintenant la Force à d'autres startups en freelance.",
@@ -33,6 +41,12 @@
     "description":"Frère d'arme de Damien, aussi passé par l'Imperial et Polytechnique, c'est le \"gros dév sale\" Data Science & Back End du duo. Il est dit dans le milieu qu'il code une ligne à chaque beat de techno qui sort de son casque vers ses oreilles. Et oui, il écoute de la techno RAPIDE.",
     "profile_url":"https://fr.linkedin.com/in/nahom-daniel-65770b85",
     "image_url": "https://media.licdn.com/media/p/5/005/085/03e/2a3f771.jpg"
+  }, {
+    "name": "Jean Ashton", 
+    "one_liner": "co-founder @ Breakers",
+    "description":"Diplômé de l'X et l'EPFL avec une spécialisation en Data Science, Jean a développé un modèle de prévision de temps de trajet chez IBM. Co-fondateur de Projectiv, sa première startup en mode SaaS pour les salles de cinéma, il travaille en ce moment chez Breakers (http://breakers.tech), sa deuxième startup qui réalise des projets web, mobile et data en un temps record pour ses clients.",
+    "profile_url":"https://breakers.tech",
+    "image_url": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAA2HAAAAJDI4YWY0YzRlLWM1MmEtNGY5ZS1iNjUzLTFhMGRkYzljNTUwNQ.jpg"
   },
   {
     "name": "Nicolas Burel", 
